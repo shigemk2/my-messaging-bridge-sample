@@ -10,3 +10,5 @@ class MessageBridgeException(message: String, cause: Throwable, retry: Boolean)
 
   def retry(): Boolean = retry
 }
+
+object RabbitMQMessagingBridgeRunner extends CompletableApp(1)
